@@ -4,175 +4,176 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-
-  <title>Frontend Mentor | Results summary component</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+  <title>Frontend Mentor | NFT preview card component</title>
+
 
   <style>
     body {
-      background-color: hsl(221, 100%, 96%);
+      background-color: hsl(217, 54%, 11%);
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      height: 120vh;
     }
 
     .container {
-
-      background-color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 20px;
-      font-family: Hanken Grotesk;
-
-    }
-
-    .purple {
-
-      background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-      border-radius: 20px;
+      background-color: hsl(216, 50%, 16%);
+      width: 300px;
+      height: 550px;
       padding: 20px;
       display: flex;
-      align-items: center;
       flex-direction: column;
+      justify-content: space-around;
+      border-radius: 10px;
       color: white;
+      font-family: outfit;
+      position: relative;
+      z-index: 0;
+
     }
 
-    .right {
-      padding: 30px;
+    .img {
+      border-radius: 10px;
+      margin-top: -11px;
+      margin-left: -1px;
+      z-index: 1;
+    }
+
+    .img:hover {
+      opacity: 0.5;
+      z-index: -2;
+
+    }
+
+
+    .view-icon {
+      opacity: 1;
+      position: absolute;
+      top: 20px;
+      background-color: hsl(178, 100%, 50%);
+      width: 50px;
+      padding: 125px;
+      height: 52px;
+      border-radius: 10px;
+      z-index: -3;
+    }
+
+    .view {
+      position: absolute;
+      left: 145px;
+      top: 150px;
+      z-index: -1;
+    }
+
+    
+
+    .row {
       display: flex;
-      flex-direction: column;
-
-    }
-
-    .result {
-      opacity: .6;
-      margin-bottom: 5px;
-    }
-
-    .circle {
-      background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
-      border-radius: 50%;
-      width: 80px;
-      height: 80px;
-      padding: 15px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      margin-top: 10px;
-
-
-    }
-
-    h1 {
-      margin-top: -5px;
-    }
-
-    .of-100 {
+      justify-content: space-between;
       margin-top: -20px;
-      opacity: .6;
     }
+
+    .head {
+      font-size: 20px;
+      margin-top: -30px;
+    }
+
+    .head:hover {
+      color: hsl(178, 100%, 50%);
+    }
+
 
     p {
-      margin-top: -10PX;
-      font-size: 16PX;
-      opacity: .6;
-      text-align: center;
+      margin-top: -10px;
+      color: hsl(215, 51%, 70%);
     }
 
-    .SUM {
-      margin-top: -60PX;
-      font-size: 15px;
+    .hr {
+      width: 300px;
+      height: 0.3px;
+      color: hsl(215, 51%, 70%);
+      border-color: hsl(215, 51%, 70%);
+    }
+
+    .sims {
+      color: hsl(178, 100%, 50%);
+      margin-left: 20px;
+      position: relative;
+
 
     }
 
-    .spans {
+    .icon {
+      position: absolute;
+      top: 2px;
+      right: 80px;
+    }
+
+    .clock {
+      color: hsl(215, 51%, 70%);
+      position: relative;
+    }
+
+    .icon-2 {
+      position: absolute;
+      top: 2px;
+      right: 80px;
+    }
+
+    .ava {
       display: flex;
-      justify-content: space-around;
-      padding: 10px;
-      border-radius: 5px;
-      margin-bottom: 10px;
-      font-size: 10px;
-      width: 150px;
+      align-items: center;
+
     }
 
-    .spans img {
-      width: 10px;
+    .ava-img {
+      border-radius: 50%;
+      border: 1px solid white;
     }
 
-    .Cont {
-      background-color: hsl(224, 30%, 27%);
-      color: white;
-      margin-bottom: -60px;
-      margin-top: 20px;
-      text-align: center;
-      padding: 10px;
-      border-radius: 20px;
-      font-size: 10px;
+    .Creation {
+      margin-left: 15px;
     }
 
-    .Cont:hover {
-      background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    .blue {
+      color: hsl(215, 51%, 70%);
+    }
+
+    .hover:hover {
+      color: hsl(178, 100%, 50%);
     }
   </style>
-
-
-
-
 </head>
-
 
 <body>
   <div class="container">
+    <div class="view-icon"></div>
+    <img src="images/icon-view.svg" class="view">
 
-    <div class="purple"><span class="result">Your Result</span>
-      <div class="circle">
-        <h1>76</h1>
-        <spaN class="of-100"> of 100</spaN>
+    <img src="images/image-equilibrium.jpg" class="img" width="302px" height="304px"><br>
+    <span class="head"> <strong> Equilibrium #3429</strong></span>
+
+    <p>Our Equilibrium collection promotes <br>balance and calm.</p>
+    <div class="row">
+      <div class="sims">
+        <img src="images/icon-ethereum.svg" class="icon"><span class="margin"><b>0.041 ETH</b></span>
       </div>
-
-      <H2>Great</H2>
-      <p>You scored higher than 65% of <br>the people who have taken<br> these tests.</p>
+      <div class="clock">
+        <img src="images/icon-clock.svg" class="icon-2"><span class="margin-2">3 days left</span>
+      </div>
     </div>
-    <div class="right">
-      <h2 CLASS="SUM">Summary</h2>
-      <div class="spans" style="background-color: hsl(0, 86%, 89%);">
-        <div class="img-and-font"><img src="assets/images/icon-reaction.svg">
-          <span style=" color: hsl(0, 100%, 67%);">Reaction</span>
-        </div>
-        <span>80 / 100</span>
-      </div>
-      <div class="spans" style="background-color: hsl(38, 72%, 87%);">
-        <div class="img-and-font"><img src="assets/images/icon-memory.svg">
-          <span style="color:  hsl(39, 100%, 56%);">Memory</span>
-        </div>
-        <span>92 / 100</span>
-      </div>
-      <div class="spans" style="background-color: hsl(166, 81%, 90%);">
-        <div class="img-and-font"><img src="assets/images/icon-verbal.svg">
-          <span style="color:hsl(166, 100%, 37%) ;"> Verbal</span>
-        </div>
-        <spaN>61 / 100</spaN>
-      </div>
-      <div class="spans" style="background-color: hsl(234, 76%, 90%);">
-        <div class="img-and-font"><IMG SRC="assets/images/icon-visual.svg">
-          <SPAN style="color: hsl(234, 85%, 45%) ;"> Visual</SPAN>
-        </div>
-        <span> 72 / 100</span>
-      </div>
-
-      <span class="Cont">Continue</span>
+    <hr class="hr">
+    <div class="ava">
+      <img src="images/image-avatar.png" width="40px" class="ava-img">
+      <div class="Creation"><span class="blue">Creation of</span><span class="hover"> Jules Wyvern</span></div>
     </div>
   </div>
-
 
 </body>
 
