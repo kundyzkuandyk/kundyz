@@ -13,25 +13,27 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Blue 500: hsl(215, 51%, 70%)
-- Cyan 400: hsl(178, 100%, 50%)
+Gold 500: hsl(31, 77%, 52%)
+Cyan 800: hsl(184, 100%, 22%)
+Green 950: hsl(179, 100%, 13%)
 
 ### Neutral
 
-- Blue 950 (main BG): hsl(217, 54%, 11%)
-- Blue 900 (card BG): hsl(216, 50%, 16%)
-- Blue 800 (line): hsl(215, 32%, 27%)
-- White: hsl(0, 0%, 100%)
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Gray 100 (background, headings, buttons): hsl(0, 0%, 95%)
 
 ## Typography
 
 ### Body Copy
 
-- Font size (paragraph): 18px
+- Font size: 15px
 
 ### Font
 
-- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
-- Weights: 300, 400, 600
+- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400
+
+- Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
+- Weights: 700
 
 > 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma.
