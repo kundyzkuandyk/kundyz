@@ -4,166 +4,133 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
-  <title>Frontend Mentor | 3-column preview card component</title>
-  <link href='https://fonts.googleapis.com/css?family=Big+Shoulders+Display' rel='stylesheet'>
-
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+
   <style>
     body {
+      background-color: hsl(235, 18%, 26%);
       display: flex;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
+
     }
 
     .container {
+      background-color: white;
       display: flex;
-      padding: 30px;
-      color: white;
-      font-family: Lexend Deca;
-
-
       border-radius: 20px;
+      padding: 10px;
+      font-family: Roboto;
+      width: 700px;
+      height: 450px;
     }
 
-    .orange {
-      background-color: hsl(31, 77%, 52%);
-      padding: 30px;
-      padding-bottom: 60px;
-      border-radius: 20px 0px 0px 20px;
-    }
+    .left {
 
-    .orange img {
-      width: 50px;
-    }
-
-    .blue {
-      background-color: hsl(184, 100%, 22%);
       padding: 30px;
     }
 
-    .blue img {
-      width: 50px;
-    }
 
-    .green {
-      background-color: hsl(179, 100%, 13%);
-      padding: 30px;
-      border-radius: 0px 20px 20px 0px;
-    }
 
-    .green img {
-      width: 50px;
-    }
-
-    h2 {
-      font-family: Big Shoulders Display;
+    h1 {
+      color: hsl(234, 29%, 20%);
       font-size: 40px;
     }
 
     p {
-      opacity: .6;
-      font-weight: 400;
+      margin-top: -20px;
       font-size: 15px;
-      margin-bottom: 100px;
+      color: hsl(235, 18%, 26%);
     }
 
-    .span-orange {
-
-      background-color: white;
-      color: black;
-
-      padding: 10px 20px;
-      border-radius: 20px;
-      margin-left: 20px;
-      color: hsl(31, 77%, 52%)
-    }
-
-    .span-blue {
-
-      background-color: white;
-      color: hsl(184, 100%, 22%);
-
-      padding: 10px 20px;
-      border-radius: 20px;
-      margin-left: 20px;
-
-
+    .ul {
+      margin-left: -45px;
 
     }
 
-    .span-green {
-
-      background-color: white;
-      color: hsl(179, 100%, 13%);
-      ;
-
-      padding: 10px 20px;
-      border-radius: 20px;
-      margin-left: 20px;
-
-
+    .li {
+      margin-bottom: 5px;
 
     }
 
-    .span-orange:hover {
-      border: 2px solid white;
+    .p-of-email {
+      font-size: 10px;
+      color: hsl(234, 29%, 20%);
+    }
+
+    .email {
+
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid gray;
+      opacity: .5;
+      width: 300px;
+    }
+
+    .button {
+      background-color: hsl(234, 29%, 20%);
       color: white;
-      background-color: hsl(31, 77%, 52%);
-
+      margin-top: 25px;
+      width: 300px;
+      padding: 10px 5px;
+      border-radius: 5px;
     }
 
-    .span-blue:hover {
-      border: 2px solid white;
-      background-color: hsl(184, 100%, 22%);
-      ;
-      color: white;
+    .buttondiv {
+      display: flex;
+      justify-content: center;
+      margin-left: -13px;
     }
 
-    .span-green:hover {
-      border: 2px solid white;
-      background-color: hsl(179, 100%, 13%);
-      ;
-      color: aliceblue;
+    .button:hover {
+      background-image: radial-gradient(hsl(4, 100%, 67%), hsl(346, 72%, 66%));
+      border: none;
+
     }
   </style>
 </head>
 
 <body>
+
+
   <div class="container">
-    <div class="orange"><img src="images/icon-sedans.svg">
-      <h2>Sedans</h2>
-      <p>Choose a sedan for its<br> affordability and excellent<br> fuel economy. Ideal for<br> cruising in the city
-        or on <br>your next road trip.</p>
-      <span CLASS="span-orange">Learn More</span>
-    </div>
-    <div class="blue"><img src="images/icon-suvs.svg">
-      <h2> SUVs</h2>
-      <p> Take an SUV for its spacious<br> interior, power, and <br>versatility. Perfect for your <br>next family
-        vacation
-        and <br>off-road adventures.</p><span CLASS="span-blue">Learn More</span>
+    <div class="left">
+      <h1>Stay updated!</h1>
+
+      <p>Join 60,000+ product managers receiving monthly updates on:</p>
+      <ul class="ul">
+        <li class="li"><img src="assets/images/icon-list.svg">Product discovery and building what matters </li>
+        <li class="li"><img src="assets/images/icon-list.svg">Measuring to ensure updates are a success</li>
+        <li class="li"><img src="assets/images/icon-list.svg">And much more!</li>
+      </ul>
+
+
+
+      <span class="p-of-email"> <b>Email address</b></span><br>
+      <input type="text" placeholder=" email@company.com" class="email">
+      <div class="buttondiv"><button class="button"> Subscribe to monthly newsletter</button></div>
     </div>
 
-    <div class="green"><img src="images/icon-luxury.svg">
-      <h2>Luxury</h2>
-      <p> Cruise in the best car brands<br> without the bloated prices.<br> Enjoy the enhanced comfort <br>of a luxury
-        rental and arrive <br>in style.</p><span CLASS="span-green">Learn
-        More</span>
-    </div>
+    <img src="assets/images/illustration-sign-up-desktop.svg">
+
 
   </div>
+
+
+
+
+
 </body>
 
 </html>
