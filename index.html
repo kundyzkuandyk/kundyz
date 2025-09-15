@@ -2,134 +2,123 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        div img {
+            border-radius: 10px;
+        }
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+        .head {
+            font-size: 30px;
+            color: #052b7c;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+        }
 
-  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+        .paragraphs {
+            font-size: 15px;
+            color: #1977b9;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 200;
+        }
 
-  <style>
-    body {
-      background-color: hsl(235, 18%, 26%);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
+        .ul {
+            font-size: 15px;
+            color: #c0e2fa;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 200;
+            background-color: rgb(66, 151, 182);
+            padding: 20px;
+            border-radius: 20px;
+        }
 
-    }
+        .quote-and-website {
+            color: #052b7c;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+        }
 
-    .container {
-      background-color: white;
-      display: flex;
-      border-radius: 20px;
-      padding: 10px;
-      font-family: Roboto;
-      width: 700px;
-      height: 450px;
-    }
+        .table-color {
+            font-size: 30px;
+            font-weight: bold;
+            color: #291187;
+        }
 
-    .left {
-
-      padding: 30px;
-    }
-
-
-
-    h1 {
-      color: hsl(234, 29%, 20%);
-      font-size: 40px;
-    }
-
-    p {
-      margin-top: -20px;
-      font-size: 15px;
-      color: hsl(235, 18%, 26%);
-    }
-
-    .ul {
-      margin-left: -45px;
-
-    }
-
-    .li {
-      margin-bottom: 5px;
-
-    }
-
-    .p-of-email {
-      font-size: 10px;
-      color: hsl(234, 29%, 20%);
-    }
-
-    .email {
-
-      margin-top: 10px;
-      padding: 10px;
-      border-radius: 5px;
-      border: 1px solid gray;
-      opacity: .5;
-      width: 300px;
-    }
-
-    .button {
-      background-color: hsl(234, 29%, 20%);
-      color: white;
-      margin-top: 25px;
-      width: 300px;
-      padding: 10px 5px;
-      border-radius: 5px;
-    }
-
-    .buttondiv {
-      display: flex;
-      justify-content: center;
-      margin-left: -13px;
-    }
-
-    .button:hover {
-      background-image: radial-gradient(hsl(4, 100%, 67%), hsl(346, 72%, 66%));
-      border: none;
-
-    }
-  </style>
+        tr,
+        td {
+            border-bottom: 1px solid black;
+            padding: 10px 50px;
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
+    <div>
 
+        <body style="background-color:powderblue;"></body>
+        <h1 class="head">About me</h1>
+        <p class="paragraphs"><b>My name is Kundyz,I'm 16.I'm a student of Jambyl Innovation hight college.
+                In my family we have 6 people.My grandparents,parents,sisters and brother.I live in Kazakhstan,Taraz.I
+                will
+                be IT specialist. </b></p>
+        <hr>
+        <h2 class="head">What would I like to do in the field of web design and development?</h2>
+        <p class="paragraphs"><b>I would like to work on creating user-friendly and aesthetically pleasing websites
+                where
+                design and
+                functionality work together. I am especially interested in developing skills in responsive web design
+                ana
+                front-end development so that projects are beautiful, modern and accessible on any device.</b></p>
+        <hr>
+        <h3 class="head">Three important things to know about me:</h3>
+        <ul class="ul"><b>
+                <li> I value attention to detail and always try to finish the job.</li>
+                <li> I enjoy learning new things and finding unconventional solutions.</li>
+                <li> I work better when I feel inspired and interested in the project.</li>
+            </b>
+        </ul>
+        <hr>
+        <p class="quote-and-website"><b>Design is not just what it looks like and feels like. Design is how it
+                works.</b></p>
 
-  <div class="container">
-    <div class="left">
-      <h1>Stay updated!</h1>
-
-      <p>Join 60,000+ product managers receiving monthly updates on:</p>
-      <ul class="ul">
-        <li class="li"><img src="assets/images/icon-list.svg">Product discovery and building what matters </li>
-        <li class="li"><img src="assets/images/icon-list.svg">Measuring to ensure updates are a success</li>
-        <li class="li"><img src="assets/images/icon-list.svg">And much more!</li>
-      </ul>
-
-
-
-      <span class="p-of-email"> <b>Email address</b></span><br>
-      <input type="text" placeholder=" email@company.com" class="email">
-      <div class="buttondiv"><button class="button"> Subscribe to monthly newsletter</button></div>
+        <cite>Steve Jobs</cite>
+        <br>
+        <img src="photo_5312193174816556199_y.jpg" alt="me" width=300>
+        <img src="photo_5312193174816556200_y (1).jpg" alt="me and my brother" width=200>
+        <hr>
+        <h4 class="quote-and-website">A site I like to visit:<a href="https://www.awwwards.com/" target="_blank"> Awwwards</a> -
+            a platform that collects the best examples of web design from around the world.</h4>
+        <hr>
+        <h5 class="head">What kind of hobby is this?</h5>
+        <p class="paragraphs"><b>I like to create layouts and interfaces that combine aesthetics and usability. It's like a construction set:a whole picture is born from many parts.</b></p>
+        <hr>
+        <h6 class="head">Where have you traveled thanks to your hobby?</h6>
+        <p class="paragraphs"><b>So far, my hobby is more related to virtual travel: I get to know designs from all over
+                the world, study different cultural features in the presentation of information.
+                What other life experience has your hobby given you?I have learned patience and attention to detail, and
+                I also realized that creativity is born from experiments.Web design has given me experience working in a
+                team, the ability to listen to the customer and turn their ideas into a working product.</b></p>
+        <table>
+            <tr>
+                <td class="table-color"><b>Born in</b></td>
+                <td class="table-color">2009</td>
+            </tr>
+            <tr>
+                <td class="table-color"><b>Go to the school</b></td>
+                <td class="table-color">2014</td>
+            </tr>
+            <tr>
+                <td class="table-color"><b>Finish the school</b></td>
+                <td class="table-color">2024</td>
+            </tr>
+            <tr>
+                <td class="table-color"><b>Go to the college</b></td>
+                <td class="table-color">2024</td>
+            </tr>
     </div>
-
-    <img src="assets/images/illustration-sign-up-desktop.svg">
-
-
-  </div>
-
-
-
-
 
 </body>
 
