@@ -4,130 +4,236 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <title>Frontend Mentor | Order summary card</title>
+  <title>Frontend Mentor | [Challenge Name Here]</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
     rel="stylesheet">
-
 
   <style>
     body {
+      background-color: rgb(227, 226, 226);
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      background-image: url(images/pattern-background-mobile.svg);
-      background-repeat: no-repeat;
-      background-color: hsl(224, 23%, 55%);
+      min-height: 100vh;
     }
 
     .container {
-      background-color: white;
+      width: 1300px;
+      height: 500px;
       display: flex;
-      align-items: center;
-      flex-direction: column;
-      border-radius: 20px;
-      height: 700px;
       gap: 20px;
-      font-size: 20px;
-      font-family: Red Hat Display;
+      font-family: Barlow Semi Condensed;
     }
 
-    h1 {
-      color: hsl(223, 47%, 23%);
-
-
-    }
-
-    p {
-      margin-top: -20px;
-      color: hsl(224, 23%, 55%);
-    }
-
-    .Annual {
-      background-color: hsl(225, 100%, 98%);
-      width: 300px;
-      border-radius: 10px;
-      padding: 15px 10px;
+    .cont-1234 {
+      width: 1000px;
+      height: 500;
       display: flex;
-      justify-content: space-around;
+      flex-direction: column;
+      gap: 20px;
     }
 
-    .change {
-      padding-top: 15px;
-      color: rgb(31, 64, 184);
-    }
-
-    .change:hover {
-      color: #756bef;
-    }
-
-    .img-annual {
-      width: 35px;
-      height: 35px;
-
-
-    }
-
-    .imghero {
-      border-radius: 20px 20px 0px 0px;
-    }
-
-    .button {
-      background-color: hsl(245, 75%, 52%);
-      border: 1px solid black;
-      border-radius: 10PX;
-      padding: 15px;
+    .cont-1 {
+      background-color: hsl(263, 55%, 52%);
+      padding: 30px;
       color: white;
-      width: 400px;
-      box-shadow: 0px 0px 2px 0px hsl(223, 47%, 23%);
+      width: 650px;
+      height: 250px;
+      border-radius: 5px;
+      color: hsl(214, 17%, 92%);
+
     }
 
-    .button:hover {
-      background-color: #756bef;
+    .cont-2 {
+      background-color: hsl(217, 19%, 35%);
+      padding: 30px;
+      color: white;
+      width: 300px;
+      height: 250px;
+      border-radius: 5px;
+      color: hsl(214, 17%, 92%);
+
+
     }
 
-    .last {
-      color: hsl(224, 23%, 55%);
+    .cont-3 {
+      background-color: rgb(255, 255, 255);
+      padding: 30px;
+      color: hsl(217, 19%, 35%);
+      width: 300px;
+      height: 250px;
+      border-radius: 5px;
+
+
+    }
+
+    .cont-4 {
+      background-color: hsl(219, 29%, 14%);
+      padding: 30px;
+      color: hsl(0, 0%, 81%);
+      width: 650px;
+      height: 250px;
+      border-radius: 5px;
+      color: hsl(0, 0%, 81%);
+
+
+    }
+
+    .cont-5 {
+      background-color: rgb(255, 255, 255);
+      padding: 30px;
+      color: hsl(217, 19%, 35%);
+      width: 200px;
+      height: 580px;
+      border-radius: 5px;
+
+
+    }
+
+    .bond {
+      font-weight: 600;
+      font-size: 20px;
+    }
+
+    .cont-1-2 {
+      display: flex;
+      gap: 20px;
+    }
+
+    .cont-3-4 {
+      display: flex;
+      gap: 20px;
+    }
+
+    div img {
+      border-radius: 50%;
+      border: 1px solid white;
+    }
+
+    .authors-img {
+      display: flex;
+    }
+
+    .author-and {
+      font-size: 10px;
+      margin-left: 20px;
+
+    }
+
+    .authors {
+      font-size: 10px;
+    }
+
+    .p {
       font-size: 15px;
-      margin-top: 10px;
-
-    }
-
-    .last:hover {
-      color: #756bef;
     }
   </style>
 </head>
 
 <body>
-
   <div class="container">
-    <img src="images/illustration-hero.svg" class="imghero">
-
-    <h1 style="font-size: 35px;">Order Summary</h1>
-
-    <p>You can now listen to millions of songs,<BR> audiobooks, and podcasts on any
-      device <BR> anywhere you like!</p>
-    <div class="Annual">
-      <img src="images/icon-music.svg" class="img-annual">
-      <span class="grow 2"><b>Annual Plan <BR> $59.99/year</b></span>
-
-
-
-      <a href="https://www.frontendmentor.io?ref=challenge" target="Blank" class="change">Change </a>
-    </div><button class="button"> <b>Proceed to Payment</b></button>
+    <div class="cont-1234">
+      <div class="cont-1-2">
+        <div claSS="cont-1">
+          <div class="authors-img">
+            <img src="images/image-daniel.jpg" width="30px" height="30px">
+            <div class="author-and"> <span class="authors">Daniel Clifford</span> <br>
+              <span>Verified Graduate</span>
+            </div>
+          </div>
 
 
-    <span class="last"><b> Cancel Order </b></span>
+          <p class="bond">I received a job offer mid-course, and the subjects I learned<br> were current, if not more
+            so,
+            in the company I joined. I <br>honestly feel I got every penny’s worth.</p>
+          <p class="p">
+            “ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a<br>
+            transition and have heard some people who had an amazing experience here. I signed up
+            for<br> the free intro course and found it incredibly fun! I enrolled shortly thereafter.
+            The next 12 <br>weeks was the best - and most grueling - time of my life. Since completing
+            the course, I’ve <br>successfully switched careers, working as a Software Engineer at a VR startup.”</p>
+        </div>
+        <div class="cont-2">
+          <div class="authors-img">
+            <img src="images/image-jonathan.jpg" width="30px" height="30px">
+            <div class="author-and"><span class="authors">Jonathan
+                Walters</span><br>
+              <spaN>Verified Graduate</spaN>
+            </div>
+          </div>
 
+          <P class="bond">The team was very <br>supportive and kept me<br> motivated</P>
 
+          <p class="p"> “ I started as a total newbie with <br>virtually no coding skills. I now work <br>as a mobile
+            engineer
+            for a big <br>company. This was one of the best<br> investments I’ve made in myself. ”</p>
+        </div>
+      </div>
+      <div class="cont-3-4">
+        <div class="cont-3">
+          <div class="authors-img">
+            <img src="images/image-jeanette.jpg" width="30px" height="30px">
+            <div class="author-and"><span class="authors">Jeanette Harmon</span> <br>
+              <span>Verified Graduate</span>
+            </div>
+          </div>
+
+          <p class="bond"> An overall wonderful <br>and rewarding <br>experience</p>
+
+          <P class="p">“ Thank you for the wonderful<br> experience! I now have a job I really <br>enjoy, and make a
+            good living
+            while <br>doing something I love. ”</P>
+        </div>
+        <div class="cont-4">
+          <DIV CLASS="authors-img">
+            <img src="images/image-patrick.jpg" width="30px" height="30px">
+            <div class="author-and"><span class="authors">Patrick Abrams</span><br><span>
+                Verified Graduate</span></div>
+          </DIV>
+
+          <p class="bond">Awesome teaching support from TAs who did the bootcamp <br>themselves. Getting guidance
+            from
+            them and
+            learning from<br> their experiences was easy.</p>
+
+          <p class="p">“ The staff seem genuinely concerned about my progress which I find really refreshing. The<br>
+            program
+            gave me the confidence necessary to be able to go out in the world and present <br>myself as a capable
+            junior developer. The standard is above the rest. You will get the personal<br> attention you need from
+            an incredible community of smart and amazing people.” </p>
+        </div>
+      </div>
+    </div>
+    <div class="cont-5">
+      <div class="authors-img">
+        <img src="images/image-kira.jpg" width="30px" height="30px">
+        <div class="author-and"><span class="authors">Kira Whittle</span><br><span>
+            Verified Graduate</span></div>
+      </div>
+
+      <p class="bond"> Such a life-changing<br> experience. Highly <br>recommended!</p>
+
+      <p class="p"> “ Before joining the bootcamp, I’ve <br>never written a line of code. I needed<br> some structure
+        from
+        professionals<br> who can help me learn programming <br>step by step. I was encouraged to <br>enroll by a former
+        student of theirs<br> who can only say wonderful things <br>about the program. The entire<br> curriculum and
+        staff
+        did not<br> disappoint. They were very hands-on<br> and I never had to wait long for<br> assistance. The agile
+        team
+
+        could ever have. In <br>fact, I’ve often referred to it during<br> interviews as an example of my <br>developent
+        experience. It certainly <br>helped me land a job as a full-stack <br>developer after receiving multiple
+        <br>offers.
+        100% recommend! ”
+      </p>
+    </div>
   </div>
+
 </body>
 
 </html>
